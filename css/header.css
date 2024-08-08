@@ -1,25 +1,28 @@
 @charset "utf-8";
 
-*{margin: 0; padding: 0; box-sizing: border-box;}
+* {margin:0; padding:0; box-sizing: border-box;}
 
+body#top {overflow: hidden;}
 
-a{
-    text-decoration: none; color: black;
+a {
+    text-decoration: none; color:black;
 }
-header{
-    padding: 20px;position: relative; text-align: right;background: white;
+header {
+    padding-bottom:50px; position:relative;/* text-align: right; */ background: white;    
+}
+header>div {display:flex; }
+#outer {flex:1; padding:20px; }
+header>div> button.material-symbols-outlined {
+    background: none; font-size:2rem; margin-bottom:20px; border:none; padding:20px;
+}
+header nav {
+    background-color:rgba(0,0,0, 0.85); height:100vh; 
+    position: absolute;  left:0;  width:100%; /* overflow:hidden; */ transition:all 0.7s;
 }
 
-header button.material-symbols-outlined{
-   border: none;  background: none;font-size: 2rem;margin-bottom: 20px;
-}
-header nav{
-    background:  rgba(0,0,0,0.85); height: 100vh;
-    transition: all 0.7s;
-}
-/* header:hover  nav.Slide{height: 100vh; padding: 50px;} */
-header nav a{
-    display: block;color: white; font-size: 1.5rem; font-weight: bold;text-align: center;margin: 30px;
+header nav a {
+    display:block; color:white; font-size:1.5rem; font-weight:bold;
+    text-align: center; margin:30px;
 }
 
 /*********************/
